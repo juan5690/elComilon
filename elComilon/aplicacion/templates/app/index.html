@@ -1,0 +1,89 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+<div class="container">
+    <!-- Carousel -->
+    <div class="carousel">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators/dots -->
+            <ol class="carousel-indicators">
+                <li data-bs-target="#demo" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#demo" data-bs-slide-to="1"></li>
+                <li data-bs-target="#demo" data-bs-slide-to="2"></li>
+                <li data-bs-target="#demo" data-bs-slide-to="3"></li>
+            </ol>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{% static 'app/fotos/tocomple.jpg' %}" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'app/fotos/pizzaDEAH.jpg' %}" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'app/fotos/burgir.jpg' %}" alt="Image 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'app/fotos/aaa.jpg' %}" alt="Image 4">
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <a class="carousel-control-prev" href="#demo" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#demo" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">siguiente</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="container 2">
+<div class="row">
+    <div class="col-md-3">
+        <div class="card">
+            <img src="{% static 'app/fotos/almuerzo 1.jpg'%}" class="card-img-top" alt="Imagen 1">
+            <div class="card-body">
+                <h5 class="card-title">Comida china</h5>
+                <a href="{% url 'agregar_pedido' %}" class="btn btn-primary">$5000</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <img src="{% static 'app/fotos/almuerzo 2.jpg'%}" class="card-img-top" alt="Imagen 1">
+            <div class="card-body">
+                <h5 class="card-title">sushi</h5>
+                <a href="{% url 'agregar_pedido' %}" class="btn btn-primary">$5000</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <img src="{% static 'app/fotos/almuerzo 3.jpg'%}" class="card-img-top" alt="Imagen 1">
+            <div class="card-body">
+                <h5 class="card-title">Fideos</h5>
+                <a href="{% url 'agregar_pedido' %}" class="btn btn-primary">$5000</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <img src="{% static 'app/fotos/almuerzo 4.jpg'%}" class="card-img-top" alt="Imagen 1">
+
+            <div class="card-body">
+                <h5 class="card-title">Arroz Primavera</h5>
+                <a href="{% url 'agregar_pedido' %}" class="btn btn-primary">$5000</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+{% endblock  %}

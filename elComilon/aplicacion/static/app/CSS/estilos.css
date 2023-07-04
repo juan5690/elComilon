@@ -1,0 +1,25 @@
+.container {
+    width: 60%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    /*    align-items: center; */
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background-image: url('https://p4.wallpaperbetter.com/wallpaper/390/935/605/black-low-poly-monochrome-pattern-wallpaper-preview.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

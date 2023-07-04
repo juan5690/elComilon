@@ -1,0 +1,13 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+
+<body>
+    <div class="alert alert-success">
+        <strong>¡Compra exitosa!</strong> Su comida llegara en 15 minutos, para volver a la pagina
+        principal haga <a href="{% url 'index' %}" class="alert-link">click aqui!</a>.
+    </div>
+
+{% endblock %}
